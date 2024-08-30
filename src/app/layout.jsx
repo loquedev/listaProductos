@@ -2,7 +2,7 @@ import { Navbar } from "components/Navbar";
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "NextMongo",
+  title: "Disproals",
   description: "NextMongo is a simple app to manage tasks.",
 }
 

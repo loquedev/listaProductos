@@ -109,20 +109,20 @@ const NewTask = () => {
       <form onSubmit={handleSubmit}>
         <header className="flex justify-between">
           <h1 className="font-bold text-3xl">
-            {!params.id ? "Create Task" : "Update task"}
+            {!params.id ? "Crear Producto" : "Actualizar Producto"}
           </h1>
           {params.id && (
             <button
               className="bg-red-500 px-3 py-1 rounded-md"
               onClick={handleDelete}
             >
-              Delete
+              Borrar
             </button>
           )}
         </header>
         <input
           type="text"
-          placeholder="Task title"
+          placeholder="Nombre del producto"
           name="title"
           onChange={handleChange}
           value={newTask.title}
@@ -132,7 +132,7 @@ const NewTask = () => {
 
         <textarea
           name="description"
-          placeholder="Task description"
+          placeholder="Precio del Producto"
           onChange={handleChange}
           value={newTask.description}
           className="bg-gray-800 border-2 w-full p-4 rounded-lg my-4"
@@ -140,7 +140,7 @@ const NewTask = () => {
         ></textarea>
 
         <button className="bg-green-600 text-white font-semibold px-8 py-2 rounded-lg">
-          {params.id ? "Update" : "Save"}
+          {params.id ? "Actualizar" : "Guardar"}
         </button>
       </form>
     </div>

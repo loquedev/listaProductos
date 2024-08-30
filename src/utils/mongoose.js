@@ -4,6 +4,8 @@ const conn = {
   isConnected: false,
 };
 
+const { MONGO_URL } = process.env;
+
 export async function dbConnect() {
   if (conn.isConnected) {
     return;
@@ -15,8 +17,6 @@ export async function dbConnect() {
   // console.log(db.connection.db.databaseName);
   conn.isConnected = db.connections[0].readyState;
 }
-
-
 
 connection.on("connected", () => console.log("Mongodb connected to db"));
 
