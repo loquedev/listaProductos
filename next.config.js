@@ -3,7 +3,7 @@ const nextConfig = {
   version: 2,
   builds: [
     {
-      src: "./index.js",
+      src: "./src/app/page.jsx",
       use: "@vercel/node",
     },
   ],
