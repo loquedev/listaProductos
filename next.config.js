@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  version: 2,
+  builds: [
+    {
+      src: "./index.js",
+      use: "@vercel/node",
+    },
+  ],
   headers: [
     {
       source: "/api/(.*)",
